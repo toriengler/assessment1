@@ -1,0 +1,37 @@
+img{
+    width: 120px; 
+    margin-bottom: 15px; 
+ }
+ div{
+    padding: 30px; 
+    margin:5px; 
+ }
+ 
+ body{
+    background-image:url(../images/back-ground.jpeg);
+    text-align: center;
+    text-transform: uppercase
+ }
+
+#mystuff{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 
+}
+
+@media screen and (min-width: 850px){
+
+#mystuff{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+div{
+    padding: 45px
+}
+
+div:nth-child(even){
+    border:1px solid black;
+
+}
+
+}
